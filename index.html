@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio Generator</title>
+    <style>
+        h1 {
+            color: white;
+            padding-left: 10%;
+        }
+        .navbar {
+            height: 150px; /* Adjust the height as needed */
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            height: 200px; 
+            margin-top: 30px;
+        }
+        .navbar-nav {
+            font-size: 30px; /* Increase font size */
+        }
+        .navbar-nav .nav-link {
+            color: white; /* Change font color to white */
+            text-shadow: 2px 2px #fdfbfb;
+            margin-left: 20px;
+        }
+        #navbarNav{
+            margin-left: 20%;
+        }
+        /* .card {
+            border-radius: 0.95rem; /* Change border radius */
+        
+    </style>
+   
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-pd39Z3Ss+5NbjG8/83w6dyUHvt+vXQIb0PAtfjNj9Xk5o5VioAFDT9s8NUQ7G6V0+eZ+Y5HQuQwYmuRd49tGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <h1>Welcome to the Portfolio Generator</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Generator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dev.html">Developer</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <nav class="navbar navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <h1>Welcome to the Portfolio Generator</h1>
+            </a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav> -->
+    <form action="index.php" method="POST">
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <h3 class="card-title">Personal Data</h3>
+                       
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="dob" class="form-label">Date of Birth:</label>
+                                <input type="date" class="form-control" id="dob" name="dob" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number:</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Address:</label>
+                                <textarea class="form-control" id="address" name="address" rows="3"></textarea>
+                            </div>
+                            <!-- Add more personal data fields here if needed -->
+
+                           
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <h3 class="card-title">Skills</h3>
+                        <div class="mb-3">
+                            <label for="html">HTML :</label>
+                            <input type="range" id="html" name="html" min="0" max="100" value="50" class="form-range">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="css">CSS :</label>
+                            <input type="range" id="css" name="css" min="0" max="100" value="50" class="form-range">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="js">JavaScript :</label>
+                            <input type="range" id="js" name="js" min="0" max="100" value="50" class="form-range">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="php">PHP :</label>
+                            <input type="range" id="php" name="php" min="0" max="100" value="50" class="form-range">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="sql">SQL :</label>
+                            <input type="range" id="sql" name="sql" min="0" max="100" value="50" class="form-range">
+                        </div>
+                        <div class="form-group">
+                            <label for="personal_url">Personal Website URL:</label>
+                            <input type="url" class="form-control" id="personal_url" name="personal_url" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <h3 class="card-title">Educational Background</h3>
+                        <div class="mb-3">
+                            <label for="high_school" class="form-label">High School:</label>
+                            <input type="text" class="form-control" id="high_school" name="high_school" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="diploma" class="form-label">Diploma:</label>
+                            <input type="text" class="form-control" id="diploma" name="diploma">
+                        </div>
+                        <div class="mb-3">
+                            <label for="bachelor_degree" class="form-label">Bachelor's Degree:</label>
+                            <input type="text" class="form-control" id="bachelor_degree" name="bachelor_degree">
+                        </div>
+                        <div class="mb-3">
+                            <label for="master_degree" class="form-label">Master's Degree:</label>
+                            <input type="text" class="form-control" id="master_degree" name="master_degree">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="max_education" class="form-label">Max Education:</label>
+                            <select class="form-select" id="max_education" name="max_education" required>
+                                <option value="High School">High School</option>    
+                                <option value="Diploma">Diploma</option>
+                                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                                <option value="Master's Degree">Master's Degree</option>
+                                <option value="Ph.D.">Ph.D.</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-primary">Generate Portfolio</button>
+                        </div>
+                        <!-- Add more educational background fields here if needed -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card bg-dark text-white ">
+                    <div class="card-body">
+                        <h3 class="card-title">Hobbies</h3>
+                        <div class="mb-3">
+                            <label for="Hobbies" class="form-label">Hobbie:</label>
+                            <input type="text" class="form-control" id="Hobbies" name="Hobbies" required>
+                        </div>
+                        
+                        <h3 class="card-title">Languages</h3>
+                        <!-- Language -->
+                        
+                        <div class="mb-3">
+                            <label for="Language1" class="form-label">Language1:</label>
+                            <input type="text" class="form-control" id="Language1" name="Language1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Language2" class="form-label">Language2:</label>
+                            <input type="text" class="form-control" id="Language2" name="Language2" required>
+                        </div>
+                  <!-- Add more hobby fields here if needed -->
+                  <div class="form-group">
+                    <label for="about">About:</label>
+                    <textarea class="form-control" id="about" name="about" rows="4" required></textarea>
+                </div>
+               
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </form>
+   
+        </div>
+    </div>
+    <div class="footer ">
+       
+            <p>
+                Developer: Your Name |
+                <a href="https://github.com/your-github-username" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://plus.google.com/your-google-username" target="_blank"><i class="fab fa-google"></i></a>
+                | Contact: your.email@example.com
+            </p>
+            <!-- Copyright -->
+        
+    
+        
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio Generator</title>
+    <style>
+        h1{
+            color: white;
+        }
+    </style>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body><nav class="navbar navbar-light bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand"> <h1>Welcome to the Portfolio Generator</h1> </a>
+         
+      <form class="d-flex">
+       
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+  
+    
+    <form action="index.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+
+        <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" required>
+
+    
+
+            <h3>Skills Section:</h3>
+            <label for="html">HTML (meters):</label>
+            <input type="range" id="html" name="html" min="0" max="100" value="50"><br>
+    
+            <label for="css">CSS (meters):</label>
+            <input type="range" id="css" name="css" min="0" max="100" value="50"><br>
+    
+            <label for="js">JavaScript (meters):</label>
+            <input type="range" id="js" name="js" min="0" max="100" value="50"><br>
+    
+            <label for="php">PHP (meters):</label>
+            <input type="range" id="php" name="php" min="0" max="100" value="50"><br>
+    
+            <label for="sql">SQL (meters):</label>
+            <input type="range" id="sql" name="sql" min="0" max="100" value="50"><br>
+
+            <div class="EB">
+                <h3>Educational Background:</h3>
+                <label for="high_school">High School:</label>
+                <input type="text" id="high_school" name="high_school" required><br>
+        
+                <label for="diploma">Diploma (Optional):</label>
+                <input type="text" id="diploma" name="diploma"><br>
+        
+                <label for="max_education">Max Education:</label>
+                <select id="max_education" name="max_education" required>
+                    <option value="High School">High School</option>
+                    <option value="Diploma">Diploma</option>
+                    <option value="Bachelor's Degree">Bachelor's Degree</option>
+                    <option value="Master's Degree">Master's Degree</option>
+                    <option value="Ph.D.">Ph.D.</option>
+                </select><br>
+            </div>
+
+        <!-- Other input fields for project details, template selection, etc. -->
+
+        <button type="submit">Generate Portfolio</button>
+    </form>
+
+  
+
+    <div id="portfolio"></div>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
